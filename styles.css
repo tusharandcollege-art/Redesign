@@ -1283,29 +1283,14 @@ select, input, textarea { font-family: inherit; }
   }
 
   .hero__content {
-    padding: 60px 32px 60px;
+    padding: 120px 32px 60px;
     max-width: 100%;
-    order: 2; /* Text goes below the image */
+    order: 1;
   }
 
   .hero__image-panel {
-    display: block;
-    order: 1; /* Image goes to the very top */
-    height: 100vw;
-    max-height: 500px;
-    min-height: 380px;
-    width: 100%;
-    position: relative;
-    /* Blend the bottom of the image into the body cream background */
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    display: none;
   }
-
-  .hero__image {
-    object-position: center top;
-  }
-  
-  .hero__image-overlay { display: none; }
 
   .about__container { grid-template-columns: 1fr; gap: 40px; }
   .about__img-frame { max-width: 420px; margin: 0 auto; }
