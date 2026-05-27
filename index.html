@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2D5A27" />
+  <title>Magic Dietitian | Dr. Geetika Chopra | Celebrity Nutritionist & Weight Loss Expert</title>
+  <meta name="description" content="Transform your health naturally with Dr. Geetika Chopra's Magic Dietitian. India's leading celebrity nutritionist offering personalized diet plans for weight loss, diabetes, PCOS, thyroid and more." />
+  <meta property="og:title" content="Magic Dietitian | Dr. Geetika Chopra" />
+  <meta property="og:description" content="Science-backed nutrition plans for weight loss, PCOS, diabetes, and lifestyle transformation." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======= HEADER / NAV ======= -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" id="logo-link">
+        <div class="nav__logo-icon">
+          <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="#E8534A"/>
+            <path d="M24 10C24 10 16 13 16 20C16 25.5 19.5 28 24 28C28.5 28 32 25.5 32 20C32 13 24 10 24 10Z" fill="white" fill-opacity="0.9"/>
+            <path d="M19 22L21 30M29 22L27 30M23 22L24 32" stroke="#E8534A" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M22 9C22 7.5 23 6 24 5C25 6 26 7.5 26 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Fork -->
+            <line x1="17" y1="26" x2="17" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="15" y1="22" x2="15" y2="27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="17" y1="22" x2="17" y2="27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="19" y1="22" x2="19" y2="27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Spoon -->
+            <ellipse cx="31" cy="23.5" rx="2" ry="2.5" stroke="white" stroke-width="1.5"/>
+            <line x1="31" y1="26" x2="31" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="nav__logo-text">
+          <span class="nav__logo-brand">Magic Dietitian</span>
+          <span class="nav__logo-name">DR. GEETIKA CHOPRA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home"         class="nav__link active"  id="nav-home">Home</a></li>
+        <li><a href="#about"        class="nav__link"         id="nav-about">About</a></li>
+        <li><a href="#programs"     class="nav__link"         id="nav-programs">Programs</a></li>
+        <li><a href="#testimonials" class="nav__link"         id="nav-stories">Success Stories</a></li>
+        <li><a href="#products"     class="nav__link"         id="nav-blog">Blog</a></li>
+        <li><a href="#contact"      class="nav__link"         id="nav-contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--cta nav__cta" id="nav-cta-btn">
+        Book Free Consultation <span class="btn__arrow">→</span>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+      <button class="nav__drawer-close" id="drawerCloseBtn" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="nav__drawer-logo">
+        <a href="#home" class="nav__logo">
+          <div class="nav__logo-text">
+            <span class="nav__logo-brand">Magic Dietitian</span>
+            <span class="nav__logo-name">DR. GEETIKA CHOPRA</span>
+          </div>
+        </a>
+      </div>
+      <ul class="nav__drawer-menu">
+        <li><a href="#home"         class="nav__drawer-link" id="d-home">Home</a></li>
+        <li><a href="#about"        class="nav__drawer-link" id="d-about">About</a></li>
+        <li><a href="#programs"     class="nav__drawer-link" id="d-programs">Programs</a></li>
+        <li><a href="#testimonials" class="nav__drawer-link" id="d-stories">Success Stories</a></li>
+        <li><a href="#products"     class="nav__drawer-link" id="d-products">Products</a></li>
+        <li><a href="#contact"      class="nav__drawer-link" id="d-contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--cta nav__drawer-cta" id="d-cta">Book Free Consultation →</a>
+      <div class="nav__drawer-contacts">
+        <a href="tel:+919643206072">📞 +91 96432 06072</a>
+        <a href="https://wa.me/919999899084" target="_blank">💬 WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="nav__overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="home">
+    <div class="hero__content" data-animate="fade-up">
+      <div class="hero__pill" id="hero-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        India's #1 Celebrity Nutritionist
+      </div>
+
+      <h1 class="hero__heading">
+        Transform<br/>Your Health<br/>
+        <em class="hero__heading-script">Naturally</em>
+      </h1>
+      <div class="hero__underline"></div>
+
+      <p class="hero__sub">
+        Science-backed nutrition plans for weight loss,<br class="hero__sub-br"/>
+        PCOS, diabetes, and lifestyle transformation.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--cta btn--lg" id="hero-book-btn">
+          Book Free Consultation <span class="btn__arrow">→</span>
+        </a>
+        <a href="#programs" class="btn btn--outline-dark btn--lg" id="hero-programs-btn">
+          View Programs
+        </a>
+        <div class="hero__stats">
+        <div class="hero__stat-card" id="stat-exp">
+          <div class="hero__stat-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="hero__stat-text">
+            <strong><span class="hero__count" data-count="15">15</span>+</strong>
+            <span>Years Experience</span>
+          </div>
+        </div>
+        <div class="hero__stat-card" id="stat-clients">
+          <div class="hero__stat-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="hero__stat-text">
+            <strong><span class="hero__count" data-count="10000">10,000</span>+</strong>
+            <span>Clients Transformed</span>
+          </div>
+        </div>
+      </div>      </div>
+    </div>
+
+    <!-- Hero Image — full right panel -->
+    <div class="hero__image-panel">
+      <div class="hero__image-overlay"></div>
+      <img src="Images/geetika_mam.webp" alt="Dr. Geetika Chopra — Celebrity Nutritionist" class="hero__image" />
+    </div>
+  </section>
+
+  <!-- ======= TRUST STRIP ======= -->
+  <div class="trust-strip">
+    <div class="trust-strip__inner container">
+      <span class="trust-item">✦ 10,000+ Lives Transformed</span>
+      <span class="trust-divider"></span>
+      <span class="trust-item">✦ No Starvation Diets</span>
+      <span class="trust-divider"></span>
+      <span class="trust-item">✦ 100% Personalized Plans</span>
+      <span class="trust-divider"></span>
+      <span class="trust-item">✦ WhatsApp Support Included</span>
+      <span class="trust-divider"></span>
+      <span class="trust-item">✦ 98% Success Rate</span>
+    </div>
+  </div>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="about section" id="about">
+    <div class="container about__container">
+      <div class="about__img-col" data-animate="fade-right">
+        <div class="about__img-frame">
+          <img src="Images/geetika_mam.webp" alt="Dr. Geetika Chopra" class="about__img" />
+          <div class="about__img-badge" id="about-badge">
+            <span class="about__img-badge-num">15+</span>
+            <span class="about__img-badge-text">Years of<br/>Expertise</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__text-col" data-animate="fade-left">
+        <span class="eyebrow">About Dr. Geetika Chopra</span>
+        <h2 class="section-title">Your Health is<br/><em>My Mission</em></h2>
+        <p class="about__lead">India's leading celebrity nutritionist and health consultant, dedicated to transforming lives through the power of food — not deprivation.</p>
+        <p class="about__body">With over 15 years of expertise in Clinical Nutrition, Ayurveda, and Naturopathy, Dr. Geetika Chopra has helped 10,000+ clients achieve sustainable health — from rapid weight loss to reversing chronic diseases like diabetes, PCOS, and thyroid disorders.</p>
+        <p class="about__body">Her philosophy is simple: <strong>"Food is Medicine."</strong> Every program is personalized, science-backed, and free from crash diets, pills, or starvation.</p>
+
+        <div class="about__pillars">
+          <div class="pillar" id="pillar-1">
+            <div class="pillar__icon">🔬</div>
+            <div><strong>Science-Backed</strong><span>Clinical nutrition protocols</span></div>
+          </div>
+          <div class="pillar" id="pillar-2">
+            <div class="pillar__icon">🌿</div>
+            <div><strong>Holistic Approach</strong><span>Ayurveda + modern nutrition</span></div>
+          </div>
+          <div class="pillar" id="pillar-3">
+            <div class="pillar__icon">💬</div>
+            <div><strong>WhatsApp Support</strong><span>Personal guidance always</span></div>
+          </div>
+          <div class="pillar" id="pillar-4">
+            <div class="pillar__icon">🍎</div>
+            <div><strong>No Crash Diets</strong><span>Sustainable meal plans</span></div>
+          </div>
+        </div>
+
+        <div class="about__ctas">
+          <a href="#contact" class="btn btn--cta" id="about-book-btn">Book a Consultation →</a>
+          <a href="https://wa.me/919643206072" class="btn btn--wa" target="_blank" id="about-wa-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROGRAMS ======= -->
+  <section class="programs section section--tinted" id="programs">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="eyebrow">Our Programs</span>
+        <h2 class="section-title">Personalized Plans for <em>Every Goal</em></h2>
+        <p class="section-sub">Science-backed nutrition programs tailored to your unique body, lifestyle, and health goals.</p>
+      </div>
+
+      <div class="programs-grid">
+        <article class="prog-card prog-card--featured" data-animate="fade-up" id="prog-1">
+          <div class="prog-card__icon-wrap prog-card__icon-wrap--gold">⚡</div>
+          <div class="prog-card__badge">Most Popular</div>
+          <h3>45-Day Weight Loss Challenge</h3>
+          <p>Lose 10–15 kg in 45 days. No pills, no crash diets — just the magic of real food and personalized guidance.</p>
+          <ul>
+            <li><span class="tick">✓</span> Personalized diet plan</li>
+            <li><span class="tick">✓</span> WhatsApp support daily</li>
+            <li><span class="tick">✓</span> Weekly progress tracking</li>
+            <li><span class="tick">✓</span> Detox & cleansing guide</li>
+          </ul>
+          <div class="prog-card__price">
+            <span class="prog-card__price-from">Starting at</span>
+            <span class="prog-card__price-val">₹6,000</span>
+          </div>
+          <a href="#contact" class="btn btn--cta btn--full" id="prog-cta-1">Enroll Now →</a>
+        </article>
+
+        <article class="prog-card" data-animate="fade-up" id="prog-2" style="--d:0.08s">
+          <div class="prog-card__icon-wrap">💉</div>
+          <h3>Diabetes & Metabolic Health</h3>
+          <p>Reverse Type 1 & 2 diabetes naturally through therapeutic nutrition and lifestyle changes.</p>
+          <ul>
+            <li><span class="tick">✓</span> Blood sugar management</li>
+            <li><span class="tick">✓</span> Anti-inflammatory diet</li>
+            <li><span class="tick">✓</span> Lab report review</li>
+          </ul>
+          <div class="prog-card__price">
+            <span class="prog-card__price-from">Fully</span>
+            <span class="prog-card__price-val">Customized</span>
+          </div>
+          <a href="#contact" class="btn btn--outline btn--full" id="prog-cta-2">Get Details</a>
+        </article>
+
+        <article class="prog-card" data-animate="fade-up" id="prog-3" style="--d:0.16s">
+          <div class="prog-card__icon-wrap">🌸</div>
+          <h3>PCOS, Thyroid & Hormonal Health</h3>
+          <p>Restore hormonal balance naturally. Programs for PCOS, hypothyroid, hyperthyroid and endocrine disorders.</p>
+          <ul>
+            <li><span class="tick">✓</span> Hormone-balancing foods</li>
+            <li><span class="tick">✓</span> Gut health optimization</li>
+            <li><span class="tick">✓</span> Cycle & fertility support</li>
+          </ul>
+          <div class="prog-card__price">
+            <span class="prog-card__price-from">Fully</span>
+            <span class="prog-card__price-val">Customized</span>
+          </div>
+          <a href="#contact" class="btn btn--outline btn--full" id="prog-cta-3">Get Details</a>
+        </article>
+
+        <article class="prog-card" data-animate="fade-up" id="prog-4" style="--d:0.24s">
+          <div class="prog-card__icon-wrap">💪</div>
+          <h3>Advanced Weight Loss & Plateau Breaker</h3>
+          <p>Stuck at a plateau? Our advanced metabolic reset reignites fat burn and breaks through stagnation fast.</p>
+          <ul>
+            <li><span class="tick">✓</span> Metabolism boost strategy</li>
+            <li><span class="tick">✓</span> Targeted fat loss plan</li>
+            <li><span class="tick">✓</span> Habit & lifestyle guidance</li>
+          </ul>
+          <div class="prog-card__price">
+            <span class="prog-card__price-from">Fully</span>
+            <span class="prog-card__price-val">Customized</span>
+          </div>
+          <a href="#contact" class="btn btn--outline btn--full" id="prog-cta-4">Get Details</a>
+        </article>
+
+        <article class="prog-card" data-animate="fade-up" id="prog-5" style="--d:0.32s">
+          <div class="prog-card__icon-wrap">👶</div>
+          <h3>Women's Wellness & Prenatal Care</h3>
+          <p>Comprehensive nutrition for women — pre-conception, pregnancy, postpartum, and menopause.</p>
+          <ul>
+            <li><span class="tick">✓</span> Fertility nutrition plan</li>
+            <li><span class="tick">✓</span> Pregnancy meal plans</li>
+            <li><span class="tick">✓</span> Postpartum recovery</li>
+          </ul>
+          <div class="prog-card__price">
+            <span class="prog-card__price-from">Fully</span>
+            <span class="prog-card__price-val">Customized</span>
+          </div>
+          <a href="#contact" class="btn btn--outline btn--full" id="prog-cta-5">Get Details</a>
+        </article>
+
+        <article class="prog-card" data-animate="fade-up" id="prog-6" style="--d:0.4s">
+          <div class="prog-card__icon-wrap">🏃</div>
+          <h3>Sports Nutrition & Performance</h3>
+          <p>Fuel your performance with precision nutrition for athletes, fitness enthusiasts and peak physical output.</p>
+          <ul>
+            <li><span class="tick">✓</span> Performance meal plans</li>
+            <li><span class="tick">✓</span> Muscle gain & recovery</li>
+            <li><span class="tick">✓</span> Pre & post-workout guide</li>
+          </ul>
+          <div class="prog-card__price">
+            <span class="prog-card__price-from">Fully</span>
+            <span class="prog-card__price-val">Customized</span>
+          </div>
+          <a href="#contact" class="btn btn--outline btn--full" id="prog-cta-6">Get Details</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= HOW IT WORKS ======= -->
+  <section class="howit section" id="how-it-works">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="eyebrow">The Process</span>
+        <h2 class="section-title">Your Journey in <em>3 Simple Steps</em></h2>
+      </div>
+      <div class="howit__row">
+        <div class="howit__step" data-animate="fade-up" id="step-1">
+          <div class="howit__step-num">01</div>
+          <div class="howit__step-emoji">📋</div>
+          <h3>Share Your Goals</h3>
+          <p>Tell us your health goals, lifestyle, food preferences, and medical history through a free consultation call.</p>
+        </div>
+        <div class="howit__arrow">→</div>
+        <div class="howit__step" data-animate="fade-up" id="step-2" style="--d:0.12s">
+          <div class="howit__step-num">02</div>
+          <div class="howit__step-emoji">🧪</div>
+          <h3>Get Your Custom Plan</h3>
+          <p>Dr. Geetika creates a fully personalized diet plan matched to your body type, health condition, and schedule.</p>
+        </div>
+        <div class="howit__arrow">→</div>
+        <div class="howit__step" data-animate="fade-up" id="step-3" style="--d:0.24s">
+          <div class="howit__step-num">03</div>
+          <div class="howit__step-emoji">📈</div>
+          <h3>Track & Transform</h3>
+          <p>Weekly follow-ups, WhatsApp support, and plan adjustments ensure lasting, visible results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PRODUCTS ======= -->
+  <section class="products section section--tinted" id="products">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="eyebrow">Magic Store</span>
+        <h2 class="section-title">Healthy Products, <em>Crafted with Love</em></h2>
+        <p class="section-sub">Clean, nutritionist-formulated health products — snacks, powders, supplements and more.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="prod-card" data-animate="fade-up" id="prod-1">
+          <div class="prod-card__img-wrap">
+            <img src="Images/Product/2.webp" alt="Amaranth Cookie" class="prod-card__img" loading="lazy"/>
+            <span class="prod-card__tag">Sugar Free</span>
+          </div>
+          <div class="prod-card__body">
+            <h3>Amaranth Cookie</h3>
+            <p>India's lowest calorie cookie. Zero sugar, gluten-free, sweetened with stevia. A guilt-free snack rooted in Ayurveda.</p>
+            <div class="prod-card__footer">
+              <span class="prod-card__price">₹450</span>
+              <a href="https://magicdietitian.in/products/namkeen-cookie" class="btn btn--cta btn--sm" target="_blank" id="prod-buy-1">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prod-card" data-animate="fade-up" id="prod-2" style="--d:0.1s">
+          <div class="prod-card__img-wrap">
+            <img src="Images/Product/Screenshot2025-01-27134740.webp" alt="Advance Weight Loss Diet Plan" class="prod-card__img" loading="lazy"/>
+            <span class="prod-card__tag prod-card__tag--green">Program</span>
+          </div>
+          <div class="prod-card__body">
+            <h3>Advance Weight Loss Diet Plan</h3>
+            <p>Designed for faster, effective weight loss. Break plateaus, boost metabolism with personalized expert support.</p>
+            <div class="prod-card__footer">
+              <span class="prod-card__price">Custom</span>
+              <a href="#contact" class="btn btn--cta btn--sm" id="prod-buy-2">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prod-card" data-animate="fade-up" id="prod-3" style="--d:0.2s">
+          <div class="prod-card__img-wrap">
+            <img src="Images/Product/91f72e6c-5965-41fa-96ed-15ed2908a474_77f3d542-809e-48d1-b123-a911300715b6.webp" alt="45 Days Weight Loss Challenge" class="prod-card__img" loading="lazy"/>
+            <span class="prod-card__tag prod-card__tag--gold">Best Seller</span>
+          </div>
+          <div class="prod-card__body">
+            <h3>45 Days Weight Loss Challenge</h3>
+            <p>Lose weight the healthy way. Balance hormones, boost metabolism, adopt a sustainable lifestyle.</p>
+            <div class="prod-card__footer">
+              <span class="prod-card__price">₹6,000</span>
+              <a href="#contact" class="btn btn--cta btn--sm" id="prod-buy-3">Join Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prod-card" data-animate="fade-up" id="prod-4" style="--d:0.3s">
+          <div class="prod-card__img-wrap">
+            <img src="Images/Product/SnapInsta.to_499578408_17907541005173838_6595288572253656992_n.webp" alt="Ashwagandha Tablets" class="prod-card__img" loading="lazy"/>
+            <span class="prod-card__tag">Supplement</span>
+          </div>
+          <div class="prod-card__body">
+            <h3>Ashwagandha Tablets</h3>
+            <p>Calm your mind, balance your mood. Reduces anxiety, enhances memory — backed by Ayurveda.</p>
+            <div class="prod-card__footer">
+              <span class="prod-card__price">Available</span>
+              <a href="https://magicdietitian.in/collections/all" class="btn btn--cta btn--sm" target="_blank" id="prod-buy-4">Shop Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="products-cta" data-animate="fade-up">
+        <a href="https://magicdietitian.in/collections/all" class="btn btn--outline btn--lg" target="_blank" id="view-all-btn">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TESTIMONIALS ======= -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="eyebrow">Success Stories</span>
+        <h2 class="section-title">Real People, <em>Real Results</em></h2>
+        <p class="section-sub">Over 10,000 lives transformed. Here's what our clients say.</p>
+      </div>
+
+      <div class="testi-wrap">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card" id="t1">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"I lost 12 kg in just 45 days without starving! Dr. Geetika's plan was easy to follow and I never felt hungry. My energy levels have doubled. Absolutely magical!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar" style="--av:#C9A84C">P</div>
+              <div><strong>Priya Sharma</strong><span>Delhi · Weight Loss Program</span></div>
+            </div>
+          </div>
+          <div class="testi-card" id="t2">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"My HbA1c dropped from 9.2 to 6.4 in 3 months purely through diet. No additional medication. Dr. Geetika truly knows how to reverse diabetes with food."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar" style="--av:#2D5A27">R</div>
+              <div><strong>Rajesh Malhotra</strong><span>Mumbai · Diabetes Management</span></div>
+            </div>
+          </div>
+          <div class="testi-card" id="t3">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"PCOS was ruining my life. After 2 months on Dr. Geetika's hormone-balancing plan, my cycles are regular and I've lost 8 kg. I feel like a new person!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar" style="--av:#d4548a">A</div>
+              <div><strong>Ananya Gupta</strong><span>Bangalore · PCOS Program</span></div>
+            </div>
+          </div>
+          <div class="testi-card" id="t4">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Best investment I made in my health. The WhatsApp support is incredible — Dr. Geetika responds promptly and keeps you motivated every single day!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar" style="--av:#4a7fb5">S</div>
+              <div><strong>Sneha Kapoor</strong><span>Pune · Weight Loss Program</span></div>
+            </div>
+          </div>
+          <div class="testi-card" id="t5">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"My thyroid levels are finally normal after years of struggling. The personalized approach and Ayurveda integration made all the difference. Highly recommended!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar" style="--av:#7b5ea7">M</div>
+              <div><strong>Meena Joshi</strong><span>Chennai · Thyroid Program</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-controls">
+          <button class="testi-btn" id="prevBtn" aria-label="Previous">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="nextBtn" aria-label="Next">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="contact section" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__left" data-animate="fade-right">
+        <span class="eyebrow">Book a Consultation</span>
+        <h2 class="section-title contact__title">Start Your <em>Transformation</em> Today</h2>
+        <p class="contact__body">Take the first step toward a healthier, happier you. Fill in the form and Dr. Geetika's team will reach out within 24 hours.</p>
+        <div class="contact__info-list">
+          <a href="tel:+919643206072" class="contact__info-item" id="ci-1">
+            <div class="contact__info-ico">📞</div>
+            <div><span>Call Us</span><strong>+91 96432 06072</strong></div>
+          </a>
+          <a href="tel:+919910389097" class="contact__info-item" id="ci-2">
+            <div class="contact__info-ico">📞</div>
+            <div><span>Call Us</span><strong>+91 99103 89097</strong></div>
+          </a>
+          <a href="https://wa.me/919999899084" class="contact__info-item" target="_blank" id="ci-3">
+            <div class="contact__info-ico">💬</div>
+            <div><span>WhatsApp</span><strong>+91 99998 99084</strong></div>
+          </a>
+          <a href="https://www.instagram.com/dr.geetika_chopra" class="contact__info-item" target="_blank" id="ci-4">
+            <div class="contact__info-ico">📸</div>
+            <div><span>Instagram</span><strong>@dr.geetika_chopra</strong></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__right" data-animate="fade-left">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Full Name *</label>
+              <input type="text" id="f-name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Phone *</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="f-goal">Health Goal *</label>
+            <select id="f-goal" name="goal" required>
+              <option value="">Select your primary goal</option>
+              <option value="weight-loss">Weight Loss</option>
+              <option value="diabetes">Diabetes Management</option>
+              <option value="pcos">PCOS / Hormonal Health</option>
+              <option value="thyroid">Thyroid Issues</option>
+              <option value="sports">Sports Nutrition</option>
+              <option value="prenatal">Prenatal / Postnatal Care</option>
+              <option value="general">General Wellness</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Tell us more about your health goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--cta btn--full btn--lg" id="form-submit">
+            Send Message →
+          </button>
+          <p class="form-note">Or call directly: <a href="tel:+919643206072">+91 96432 06072</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__brand">
+        <a href="#home" class="nav__logo footer__logo-link">
+          <div class="nav__logo-text">
+            <span class="nav__logo-brand" style="color:#fff">Magic Dietitian</span>
+            <span class="nav__logo-name" style="color:rgba(255,255,255,0.55)">DR. GEETIKA CHOPRA</span>
+          </div>
+        </a>
+        <p>Transforming lives through the magic of food — science-backed, nature-inspired, personalized nutrition.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/dr.geetika_chopra" target="_blank" class="footer__social-a" id="f-ig" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="3"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/GeetikaChopra" target="_blank" class="footer__social-a" id="f-fb" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/919999899084" target="_blank" class="footer__social-a" id="f-wa" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home" id="fl-home">Home</a></li>
+          <li><a href="#about" id="fl-about">About Dr. Geetika</a></li>
+          <li><a href="#programs" id="fl-programs">Programs</a></li>
+          <li><a href="#products" id="fl-products">Products</a></li>
+          <li><a href="#testimonials" id="fl-testi">Success Stories</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#programs" id="fl-p1">45-Day Weight Loss</a></li>
+          <li><a href="#programs" id="fl-p2">Diabetes Management</a></li>
+          <li><a href="#programs" id="fl-p3">PCOS & Thyroid</a></li>
+          <li><a href="#programs" id="fl-p4">Sports Nutrition</a></li>
+          <li><a href="#programs" id="fl-p5">Women's Wellness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__contact-col">
+        <h4>Contact</h4>
+        <a href="tel:+919643206072" id="fc-1">📞 +91 96432 06072</a>
+        <a href="tel:+919910389097" id="fc-2">📞 +91 99103 89097</a>
+        <a href="https://wa.me/919999899084" target="_blank" id="fc-3">💬 +91 99998 99084</a>
+        <a href="https://www.instagram.com/dr.geetika_chopra" target="_blank" id="fc-4">📸 @dr.geetika_chopra</a>
+        <a href="https://www.facebook.com/GeetikaChopra" target="_blank" id="fc-5">👍 Geetika Chopra</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-row">
+        <p>© 2025 Magic Dietitian — Dr. Geetika Chopra. All rights reserved.</p>
+        <p>Made with 💚 for healthier lives</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919999899084" class="wa-fab" target="_blank" id="wa-fab" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    <span class="wa-fab__tip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
