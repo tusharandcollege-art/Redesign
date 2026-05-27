@@ -449,58 +449,73 @@ select, input, textarea { font-family: inherit; }
   margin-bottom: 44px;
 }
 
-/* Stat cards — matching reference exactly */
+/* Stat cards — premium redesign */
 .hero__stats {
   display: flex;
-  align-items: stretch;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
 }
 
 .hero__stat-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  background: var(--white);
-  padding: 18px 22px;
+  gap: 16px;
+  background: #FFFFFF;
+  padding: 20px 24px;
   border-radius: var(--r-lg);
-  box-shadow: var(--sh-sm);
-  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.06);
   flex: 1;
+  transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
 }
-
-.hero__stat-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.hero__stat-card strong {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.55rem;
-  font-weight: 700;
-  color: var(--green);
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.hero__stat-card span {
-  font-size: 0.75rem;
-  color: var(--gray);
-  display: block;
-  font-weight: 500;
-  white-space: nowrap;
+.hero__stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
 }
 
 .hero__stat-icon {
-  width: 42px; height: 42px;
-  border-radius: 10px;
-  background: var(--green-light);
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: var(--green-pale);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--green);
   flex-shrink: 0;
+}
+.hero__stat-icon svg {
+  width: 26px; height: 26px;
+}
+
+.hero__stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero__stat-value {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero__stat-plus {
+  color: var(--green);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.hero__stat-label {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .hero__stat-divider { display: none; }
