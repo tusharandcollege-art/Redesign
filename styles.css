@@ -1290,12 +1290,17 @@ select, input, textarea { font-family: inherit; }
 
   .hero__image-panel {
     order: 2;
-    height: 62vw;
-    max-height: 480px;
+    height: 100vw;
+    max-height: 550px;
+    min-height: 380px;
+  }
+
+  .hero__image {
+    object-position: center top;
   }
 
   .hero__image-overlay {
-    background: linear-gradient(to bottom, rgba(250,250,247,0.4) 0%, transparent 40%);
+    background: linear-gradient(to bottom, rgba(250,250,247,0.4) 0%, transparent 30%);
   }
 
   .about__container { grid-template-columns: 1fr; gap: 40px; }
