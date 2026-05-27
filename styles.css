@@ -201,29 +201,14 @@ select, input, textarea { font-family: inherit; }
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   flex-shrink: 0;
   text-decoration: none;
 }
 
-.nav__logo-icon svg { display: block; }
-
-.nav__logo-text { display: flex; flex-direction: column; }
-
-.nav__logo-brand {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--dark);
-  line-height: 1.1;
-}
-
-.nav__logo-name {
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  color: var(--gray);
-  margin-top: 1px;
+.nav__logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Nav links */
@@ -1159,6 +1144,7 @@ select, input, textarea { font-family: inherit; }
 }
 
 .footer__logo-link { display: block; margin-bottom: 0; }
+.footer__logo-img { height: 48px; width: auto; object-fit: contain; filter: brightness(0) invert(1); }
 
 .footer__social { display: flex; gap: 10px; margin-top: 18px; }
 
