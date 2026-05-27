@@ -772,39 +772,26 @@ select, input, textarea { font-family: inherit; }
   color: var(--green);
 }
 
-/* Featured Card Override (placed after base rules for proper CSS specificity) */
+/* Featured Card Override (Made Normal) */
 .prog-card.prog-card--featured {
-  background: var(--green);
-  color: var(--white);
-  border-color: transparent;
-  box-shadow: 0 12px 32px rgba(45,90,39,0.25);
+  background: var(--white);
+  border: 1px solid var(--green);
+  box-shadow: 0 8px 32px rgba(45,90,39,0.08);
 }
 .prog-card.prog-card--featured:hover {
   transform: translateY(-6px); 
-  box-shadow: 0 16px 40px rgba(45,90,39,0.35);
+  box-shadow: 0 16px 40px rgba(45,90,39,0.12);
 }
-.prog-card.prog-card--featured h3,
-.prog-card.prog-card--featured p,
-.prog-card.prog-card--featured li,
-.prog-card.prog-card--featured .tick { 
-  color: rgba(255,255,255,0.95); 
-}
-.prog-card.prog-card--featured h3 {
-  color: #FFFFFF;
-}
+/* Allow standard text colors to apply */
 .prog-card.prog-card--featured .prog-card__price {
-  border-top-color: rgba(255,255,255,0.15);
-  border-bottom-color: rgba(255,255,255,0.15);
+  border-top-color: var(--gray-lt);
+  border-bottom-color: var(--gray-lt);
 }
-.prog-card.prog-card--featured .prog-card__price-val,
-.prog-card.prog-card--featured .tick { 
-  color: var(--gold-light); 
+.prog-card.prog-card--featured .prog-card__price-val { 
+  color: var(--green); 
 }
 .prog-card.prog-card--featured .prog-card__price-from { 
-  color: rgba(255,255,255,0.7); 
-}
-.prog-card.prog-card--featured::after { 
-  display: none; 
+  color: var(--gray); 
 }
 
 /* ============ HOW IT WORKS ============ */
