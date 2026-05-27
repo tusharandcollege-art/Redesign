@@ -685,17 +685,7 @@ select, input, textarea { font-family: inherit; }
 .prog-card:hover { transform: translateY(-6px); box-shadow: var(--sh-md); }
 .prog-card:hover::after { border-color: var(--green-light); }
 
-.prog-card--featured {
-  background: linear-gradient(145deg, var(--green) 0%, #3D7A35 100%);
-  color: var(--white);
-  border-color: transparent;
-}
-.prog-card--featured h3,
-.prog-card--featured p,
-.prog-card--featured li { color: rgba(255,255,255,0.9); }
-.prog-card--featured .prog-card__price-val { color: var(--gold-light); }
-.prog-card--featured .prog-card__price-from { color: rgba(255,255,255,0.65); }
-.prog-card--featured::after { display: none; }
+
 
 .prog-card__icon-wrap {
   width: 54px; height: 54px;
@@ -758,8 +748,6 @@ select, input, textarea { font-family: inherit; }
   font-weight: 700;
 }
 
-.prog-card--featured .tick { color: var(--gold-light); }
-
 .prog-card__price {
   display: flex;
   align-items: baseline;
@@ -768,11 +756,6 @@ select, input, textarea { font-family: inherit; }
   border-top: 1px solid var(--gray-lt);
   border-bottom: 1px solid var(--gray-lt);
   margin-bottom: 20px;
-}
-
-.prog-card--featured .prog-card__price {
-  border-top-color: rgba(255,255,255,0.2);
-  border-bottom-color: rgba(255,255,255,0.2);
 }
 
 .prog-card__price-from {
@@ -787,6 +770,41 @@ select, input, textarea { font-family: inherit; }
   font-size: 1.55rem;
   font-weight: 400;
   color: var(--green);
+}
+
+/* Featured Card Override (placed after base rules for proper CSS specificity) */
+.prog-card.prog-card--featured {
+  background: var(--green);
+  color: var(--white);
+  border-color: transparent;
+  box-shadow: 0 12px 32px rgba(45,90,39,0.25);
+}
+.prog-card.prog-card--featured:hover {
+  transform: translateY(-6px); 
+  box-shadow: 0 16px 40px rgba(45,90,39,0.35);
+}
+.prog-card.prog-card--featured h3,
+.prog-card.prog-card--featured p,
+.prog-card.prog-card--featured li,
+.prog-card.prog-card--featured .tick { 
+  color: rgba(255,255,255,0.95); 
+}
+.prog-card.prog-card--featured h3 {
+  color: #FFFFFF;
+}
+.prog-card.prog-card--featured .prog-card__price {
+  border-top-color: rgba(255,255,255,0.15);
+  border-bottom-color: rgba(255,255,255,0.15);
+}
+.prog-card.prog-card--featured .prog-card__price-val,
+.prog-card.prog-card--featured .tick { 
+  color: var(--gold-light); 
+}
+.prog-card.prog-card--featured .prog-card__price-from { 
+  color: rgba(255,255,255,0.7); 
+}
+.prog-card.prog-card--featured::after { 
+  display: none; 
 }
 
 /* ============ HOW IT WORKS ============ */
