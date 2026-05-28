@@ -524,6 +524,10 @@ select, input, textarea { font-family: inherit; }
 }
 
 /* ============ TRUST STRIP ============ */
+/* Stats bar — mobile only (below hero), hidden on desktop */
+.hero__stats-bar {
+  display: none;
+}
 .trust-strip {
   background: var(--green);
   padding: 16px 0;
@@ -1268,35 +1272,45 @@ select, input, textarea { font-family: inherit; }
   .hero {
     display: block;
     position: relative;
-    padding-bottom: 20px;
-    background: #FFFFFF;
+    background: #FAF8F5;
     overflow: hidden;
+    min-height: 520px;
+    padding-bottom: 0;
   }
 
   .hero__content {
     position: relative;
-    z-index: 1;
-    padding: 100px 20px 20px;
-    max-width: 100%;
+    z-index: 2;
+    padding: 90px 20px 32px;
+    width: 65%;
+    max-width: 320px;
     text-align: left;
   }
 
   .hero__image-panel {
     display: block;
     position: absolute;
-    top: 50px;
-    right: -10px;
-    width: 100%;
-    height: 80%;
+    top: 0;
+    right: 0;
+    width: 58%;
+    height: 100%;
     z-index: 0;
+    background: transparent;
   }
 
   .hero__image {
-    object-position: right top;
+    object-position: left top;
+    object-fit: cover;
   }
   
+  /* Fade the left edge of the photo into the cream background */
   .hero__image-overlay { 
-    display: none;
+    display: block; 
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #FAF8F5 0%, rgba(250,248,245,0.5) 35%, transparent 70%);
+    z-index: 1;
+    pointer-events: none;
   }
 
   .about__container { grid-template-columns: 1fr; gap: 40px; }
@@ -1321,24 +1335,47 @@ select, input, textarea { font-family: inherit; }
   .section { padding: 72px 0; }
   .container { padding: 0 20px; }
 
-  .hero__content { padding: 70px 20px 20px; text-align: left; }
+  /* Mobile ≤600px: tighten up the hero overlay layout */
+  .hero { min-height: 480px; }
 
-  /* Left-align typography */
-  .hero__content > * { margin-left: 0; margin-right: auto; }
-  .hero__title { font-size: 2.8rem; line-height: 1.05; margin-bottom: 14px; max-width: 85%; }
-  .hero__subtitle { font-size: 0.9rem; max-width: 65%; line-height: 1.5; margin-bottom: 24px; }
+  .hero__content { 
+    padding: 85px 16px 28px; 
+    width: 62%;
+    max-width: 280px;
+  }
 
-  .hero__stats { flex-direction: row; align-items: stretch; gap: 10px; margin-top: 10px; }
-  .hero__stat-card { flex-direction: row; text-align: left; justify-content: flex-start; padding: 16px 14px; gap: 12px; }
-  .hero__stat-value { justify-content: flex-start; font-size: 1.3rem; }
-  .hero__stat-icon { width: 38px; height: 38px; border-radius: 10px; }
-  .hero__stat-icon svg { width: 20px; height: 20px; }
-  .hero__stat-label { font-size: 0.72rem; }
-  .hero__stat-plus { font-size: 1.1rem; }
+  .hero__title { font-size: 2.4rem; line-height: 1.05; margin-bottom: 12px; }
+  .hero__subtitle { font-size: 0.82rem; max-width: 100%; line-height: 1.5; margin-bottom: 20px; }
+
+  /* Show the stats bar below hero on mobile */
+  .hero__stats-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px 16px 24px;
+    background: #FAF8F5;
+  }
+  .hero__stats-bar .hero__stat-card {
+    flex: 1;
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 14px 12px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  }
+  .hero__stats-bar .hero__stat-value { justify-content: flex-start; font-size: 1.2rem; }
+  .hero__stats-bar .hero__stat-icon { width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0; }
+  .hero__stats-bar .hero__stat-icon svg { width: 18px; height: 18px; }
+  .hero__stats-bar .hero__stat-label { font-size: 0.68rem; }
+  .hero__stats-bar .hero__stat-plus { font-size: 1rem; }
   
-  .hero__pill { font-size: 0.65rem; margin-bottom: 20px; display: inline-flex; }
+  .hero__pill { font-size: 0.65rem; margin-bottom: 16px; display: inline-flex; }
 
-  .hero__actions { flex-direction: column; gap: 12px; width: 85%; margin-bottom: 20px; }
+  .hero__actions { flex-direction: column; gap: 10px; width: 100%; margin-bottom: 0; }
   .hero__actions .btn { width: 100%; }
 
   .programs-grid { grid-template-columns: 1fr; }
