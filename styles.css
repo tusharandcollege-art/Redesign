@@ -1279,7 +1279,7 @@ select, input, textarea { font-family: inherit; }
 
 /* Small tablet / large mobile */
 @media (max-width: 860px) {
-  /* ---- MOBILE HERO: Image card on top, content below ---- */
+  /* ---- MOBILE HERO: compact above-the-fold layout ---- */
   .hero {
     display: flex;
     flex-direction: column;
@@ -1289,19 +1289,19 @@ select, input, textarea { font-family: inherit; }
     padding-bottom: 0;
   }
 
-  /* Move image to the TOP on mobile */
+  /* Rounded image card at top */
   .hero__image-panel {
     order: -1;
     display: block;
     position: relative;
     width: calc(100% - 40px);
-    height: 300px;
-    margin: 80px 20px 0;
-    border-radius: 24px;
+    height: 220px;
+    margin: 72px 20px 0;
+    border-radius: 22px;
     overflow: hidden;
     min-height: unset;
     flex-shrink: 0;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
   }
 
   .hero__image {
@@ -1310,17 +1310,17 @@ select, input, textarea { font-family: inherit; }
     object-fit: cover;
     object-position: center top;
     display: block;
-    border-radius: 24px;
+    border-radius: 22px;
   }
 
   .hero__image-overlay { display: none; }
 
-  /* Content below the image */
+  /* Content sits directly below image, tight spacing */
   .hero__content {
     order: 1;
     position: relative;
     z-index: 1;
-    padding: 24px 20px 32px;
+    padding: 18px 20px 20px;
     width: 100%;
     max-width: 100%;
     text-align: left;
@@ -1348,28 +1348,45 @@ select, input, textarea { font-family: inherit; }
   .section { padding: 72px 0; }
   .container { padding: 0 20px; }
 
-  /* Mobile ≤600px: stacked layout — image card top, content below */
+  /* Mobile ≤600px: everything fits above the fold */
   .hero { min-height: auto; }
 
   .hero__image-panel {
-    height: 260px;
+    height: 190px;
     width: calc(100% - 32px);
-    margin: 72px 16px 0;
-    border-radius: 20px;
+    margin: 68px 16px 0;
+    border-radius: 18px;
   }
 
   .hero__content { 
-    padding: 20px 16px 28px;
+    padding: 14px 16px 16px;
     width: 100%;
     max-width: 100%;
   }
 
-  .hero__title { font-size: 2.2rem; line-height: 1.05; margin-bottom: 12px; }
-  .hero__subtitle { font-size: 0.88rem; line-height: 1.6; margin-bottom: 20px; }
-  .hero__pill { font-size: 0.65rem; margin-bottom: 16px; }
+  /* Compact heading */
+  .hero__heading { font-size: 1.85rem; line-height: 1.08; margin-bottom: 8px; }
+  .hero__heading-script { font-size: 2.1rem; }
+  .hero__underline { margin: 6px 0 10px; }
 
-  .hero__actions { flex-direction: column; gap: 10px; width: 100%; margin-bottom: 0; }
-  .hero__actions .btn { width: 100%; }
+  /* Shorter subtitle — keep to 2 lines */
+  .hero__sub { font-size: 0.82rem; line-height: 1.5; margin-bottom: 14px; }
+
+  /* Pill — small and tight */
+  .hero__pill { font-size: 0.62rem; padding: 5px 12px; margin-bottom: 12px; gap: 5px; }
+
+  /* Compact CTA buttons */
+  .hero__actions { 
+    flex-direction: column; 
+    gap: 8px; 
+    width: 100%; 
+    margin-bottom: 0;
+  }
+  .hero__actions .btn { 
+    width: 100%; 
+    padding: 13px 20px; 
+    font-size: 0.9rem;
+  }
 
   .programs-grid { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr 1fr; }
