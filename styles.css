@@ -1289,13 +1289,14 @@ select, input, textarea { font-family: inherit; }
     padding-bottom: 0;
   }
 
-  /* Rounded image card at top */
+  /* Rounded square image card at top */
   .hero__image-panel {
     order: -1;
     display: block;
     position: relative;
     width: calc(100% - 40px);
-    height: 220px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     margin: 72px 20px 0;
     border-radius: 22px;
     overflow: hidden;
@@ -1352,7 +1353,8 @@ select, input, textarea { font-family: inherit; }
   .hero { min-height: auto; }
 
   .hero__image-panel {
-    height: 190px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     width: calc(100% - 32px);
     margin: 68px 16px 0;
     border-radius: 18px;
